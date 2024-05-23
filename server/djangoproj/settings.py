@@ -28,18 +28,28 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS=['localhost','https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/',
-'https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
-'https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/login/',
-'https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/logout',
-'https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/register',
-'https://jkaewprateep-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/admin/*']
-CSRF_TRUSTED_ORIGINS=['https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/',
-'https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
-'https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/login/',
-'https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/logout',
-'https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/register',
-'https://jkaewprateep-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/admin/*']
+# ALLOWED_HOSTS=['localhost','https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/',
+# 'https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
+# 'https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/login/',
+# 'https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/logout',
+# 'https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/register',
+# 'https://jkaewprateep-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/*']
+# CSRF_TRUSTED_ORIGINS=['https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/',
+# 'https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
+# 'https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/login/',
+# 'https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/logout',
+# 'https://jkaewprateep-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/register',
+# 'https://jkaewprateep-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/*']
+
+ALLOWED_HOSTS=['*',
+'https://jkaewprateep-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/*',
+'https://jkaewprateep-3030.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/*',
+'https://jkaewprateep-3030.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/fetchDealers']
+CSRF_TRUSTED_ORIGINS=['https://*',
+'https://jkaewprateep-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/*',
+'https://jkaewprateep-3030.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/*',
+'https://jkaewprateep-3030.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/fetchDealers'
+]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],

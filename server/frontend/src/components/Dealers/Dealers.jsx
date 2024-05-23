@@ -10,9 +10,12 @@ const Dealers = () => {
   let [states, setStates] = useState([])
 
   // let root_url = window.location.origin
-  let dealer_url ="/djangoapp/get_dealers";
+//   let dealer_url ="/djangoapp/get_dealers";
+  let dealer_url = window.location.origin+"/djangoapp/get_dealers";
+//   let login_url = window.location.origin+"/djangoapp/login";
   
-  let dealer_url_by_state = "/djangoapp/get_dealers/";
+//   let dealer_url_by_state = "/djangoapp/get_dealers/";
+  let dealer_url_by_state = window.location.origin+"/djangoapp/get_dealers/";
  
   const filterDealers = async (state) => {
     dealer_url_by_state = dealer_url_by_state+state;
